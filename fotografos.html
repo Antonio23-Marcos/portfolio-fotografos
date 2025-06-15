@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Escolha um Fotógrafo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #001f3f;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    .titulo {
+      font-size: 3rem;
+      margin-top: 50px;
+      font-weight: bold;
+      font-family: 'Segoe Script', cursive;
+    }
+
+    .subtitulo {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .fotografo {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .fotografo img {
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .fotografo.expanded img {
+      transform: scale(1.3);
+    }
+
+    .info {
+      margin-top: 10px;
+      display: none;
+      font-size: 1rem;
+      background-color: #002b5c;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .info span {
+      display: block;
+      margin: 5px 0;
+    }
+
+    .fotografo.expanded .info {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="titulo">Bem-vindo!</h1>
+  <p class="subtitulo">Escolha um dos fotógrafos disponíveis:</p>
+
+  <div class="galeria">
+    <div class="fotografo" id="fotografo1">
+      <img src="FOTOGRAFA VERONICA.jpeg" alt="Fotógrafa Verônica" />
+      <div class="info">
+        <span>📞 (11) 90000-0001</span>
+        <span>📧 veronica@email.com</span>
+        <span>📖 Veronica Mattos, 19 anos, Brasileira. Especialista em eventos sociais e festas de casamento.</span>
+      </div>
+    </div>
+
+    <div class="fotografo" id="fotografo2">
+      <img src="FOTOGRAFO VINICIUS.jpeg" alt="Fotógrafo Vinícius" />
+      <div class="info">
+        <span>📞 (11) 98888-0002</span>
+        <span>📧 vinicius@email.com</span>
+        <span>📖 Vinicius Bittencourt, 23 anos, Brasileiro. Focado em retratos urbanos e paisagens naturais.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

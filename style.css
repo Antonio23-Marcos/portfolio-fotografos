@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #000030, #000000);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-com-formulario {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagem-com-formulario img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Formulário posicionado */
+.formulario-sobre-imagem {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-sobre-imagem input,
+.formulario-sobre-imagem button {
+  padding: 12px;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.formulario-sobre-imagem input {
+  background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+}
+
+.formulario-sobre-imagem button {
+  background-color: #4444ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-sobre-imagem button:hover {
+  background-color: #2222cc;
+}
+.fotografo {
+  display: inline-block;
+  margin: 20px;
+  background-color: #111a2b;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.fotografo img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.fotografo .info {
+  display: none;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Efeito ao clicar */
+.fotografo.expanded img {
+  transform: scale(1.2);
+}
+
+.fotografo.expanded .info {
+  display: block;
+}
+.rodape {
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  font-style: italic;
+}
